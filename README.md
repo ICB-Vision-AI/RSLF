@@ -61,7 +61,7 @@ python run_rslf.py
 You can change the variables *name* and *mvt_num* to change the folder name.
 
 ## Dataset
-We propose the first dataset that contains rolling shutter light-field images. It contains 7 synthetic scenes with 9x9x512x512x3 LFs for 11 motion scenarios (including one with no motion). Each scene comes with its associated depth map. You can download the dataset [here]().
+We propose the first dataset that contains rolling shutter light-field images. It contains 7 synthetic scenes with 9x9x512x512x3 LFs for 11 motion scenarios (including one with no motion). Each scene comes with its associated depth map. You can download the dataset [here](https://github.com/ICB-Vision-AI/RSLF/releases/download/Dataset/Dataset.zip).
 
 <img align="center" src='./figs/Dataset.png' align="center" width=860 />
 
