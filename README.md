@@ -29,7 +29,7 @@ Clone the repository, and build a fresh conda environment for RSLF:
 ```bash
 git clone https://github.com/yourusername/RSLF.git
 cd RSLF
-conda env create -n rslf_env
+conda create -n rslf_env
 conda activate rslf_env
 ```
 Install [pytorch](https://pytorch.org/get-started) and run:
@@ -37,6 +37,14 @@ Install [pytorch](https://pytorch.org/get-started) and run:
 pip install -r requirements.txt
 ```
 to install dependencies.
+
+## Data Preparation
+
+Download the provided dataset from [here](https://github.com/ICB-Vision-AI/RSLF/releases/download/Dataset/Dataset.zip) and extract the data into [PATH_DATASET] of your preference in your system. Then:
+```bash
+cd RSLF
+ln -s [PATH_DATASET]/Dataset/LFs LFs
+```
 
 ## Usage
 
@@ -69,10 +77,10 @@ We propose the first dataset that contains rolling shutter light-field images. I
 If you find this code and dataset useful for your research, please cite the paper:
 
 ```bibtex
-@INPROCEEDINGS{McGriff2023cvpr,
+@INPROCEEDINGS{McGriff2024wacv,
   author={Hermes {McGriff} and Renato {Martins} and Nicolas {Andreff} and Cédric {Demonceaux}},
-  booktitle={2024 IEEE / Winter Conference on Applications of Computer Vision (WACV)}, 
-  title={Joint 3D Shape and Motion Estimation from Rolling Shutter Light-Field Images}, 
+  booktitle={IEEE / CVF Winter Conference on Applications of Computer Vision (WACV)}, 
+  title={Joint {3D} Shape and Motion Estimation from Rolling Shutter Light-Field Images}, 
   year={2024}}
 ```
 
